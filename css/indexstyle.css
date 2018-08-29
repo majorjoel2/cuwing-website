@@ -1,3 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
+* {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
