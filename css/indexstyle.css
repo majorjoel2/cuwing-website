@@ -2,5 +2,70 @@
 /* CSS Document */
 
 * {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-rendering: optimizeLegibility;
+}
+
+.profile-pic {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+.officers-main {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.president {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.vice-president {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.money {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pr-social {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;`
+}
+
+.events {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.teach {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.sec {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.advise {
+	padding-left: 10px;
+	padding-right: 10px;
 }
