@@ -13,7 +13,8 @@ li {
 	margin-left: 5px;
 	top: 50%;
 	transform: translateY(-50%);
-	margin-right: 5px
+	margin-right: 5px;
+	font-size: 20px;
 }
 
 html {
@@ -124,7 +125,6 @@ html {
 }
 
 .header-wrapper {
-	display: none;
 	position: inherit;
 	top: 0px;
 	right: 40px;
@@ -168,3 +168,77 @@ li.current a {
 	color: #ffffff;
 }
 
+
+#home {
+	background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5)), url(pic/swing-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.home-content-f_left {
+	position: absolute;
+	width: 1080px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home-head {
+	color: #c0c0c0;
+	font-size: 240%;
+	font-weight: 100;
+	padding-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+.home-subhead {
+	color: #c0c0c0;
+	font-size: 200%;
+	font-weight: 150;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+}
+
+.button-header a:link,
+.button-header a:visited {
+	display: inline-block;
+	padding: 10px 40px;
+	font-size: 100%;
+	font-weight: 300;
+	text-decoration: none;
+	color: #ffffff;
+	border: 1px solid #F66733;
+	border-radius: 200px;
+	transition: background-color 0.5s, border 0.5s;
+}
+
+.button-header a:hover,
+.button-header a:active {
+	background-color: #f54f12;
+	border: 1px solid #f54f12;
+}
+
+#about {
+	background-color: #f77f51;
+}
+
+#dances {
+	background-color: #f66733;
+}
+
+#events {
+	background-color: #f54f12;
+}
+
+#membership {
+	background-color: #db420a;
+}
+
+#officers {
+	background-color: #522d80;
+}
+
+#login {
+	background-color: #1f1f1f;
+}
