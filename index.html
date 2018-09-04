@@ -15,6 +15,9 @@
 	
 	<!-- JavaScript information -->
 	<script src="js/indexscript.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="js/plugin.js"></script>
 	
 </head>
 
@@ -27,7 +30,7 @@
 	<header id="header" class="row">
 		
 		<div class="header-logo">
-			<a href="/"><img src="pic/logo.png" alt="Clemson Swing Logo" class="header-logo-picture"></a>
+			<a href="~/"><img src="pic/logo.png" alt="Clemson Swing Logo" class="header-logo-picture"></a>
 		</div>
 		
 		<nav class="header-wrapper">
@@ -69,24 +72,21 @@
 		
 		<ul class="home-social-list">
             <li>
-                <a href="https://www.facebook.com/groups/clemsonswing/"><i class="facebook-icon"></i></a>
+                <a href="https://www.facebook.com/groups/clemsonswing/" target="_blank"><img src="pic/fb-icon-final.png" alt="Facebook Logo" class="facebook-icon"></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/cu_swing/"><i class="instagram-icon"></i></a>
+                <a href="https://www.instagram.com/cu_swing/" target="_blank"><img src="pic/insta-icon-final.png" alt="Instagram Logo" class="instagram-icon"></a>
             </li>
             <li>
-                <a href="https://clemson.campuslabs.com/engage/organization/cuswing"><i class="tigerquest-icon"></i></a>
+                <a href="https://clemson.campuslabs.com/engage/organization/cuswing" target="_blank"><img src="pic/cu-icon-final.png" alt="Clemson Paw" class="tigerquest-icon"></a>
             </li>
             <li>
-                <a href="mailto:cuswing@clemson.edu"><i class="email-icon"></i></a>
+                <a href="mailto:cuswing@clemson.edu"><img src="pic/email-icon-final.png" alt="Email Icon" class="email-icon"></a>
             </li>
         </ul>
 		
 		<div class="home-scrolldown">
-            <a href="#about" class="smoothscroll">
-                <p class="scroll-msg">Scroll Down</p>
-                <i class="icon-arrow-right"></i>
-            </a>
+            <a href="#about" class="smoothscroll">Scroll Down</a>
         </div>
 		
 	</section>
@@ -94,11 +94,10 @@
 	<!-- Using id for linking to section -->
 	<section id="about">
 		
-		<div class="about-us">
+		<div class="about-us row">
 			<h1 class="about-header"><br><br><br><br>About Us</h1>
 			<p class="about-body">
 				Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
 		</div>
 		
@@ -107,11 +106,10 @@
 	<!-- Using id for linking to section -->
 	<section id="dances">
 		
-		<div class="dances-info">
+		<div class="dances-info row">
 			<h1 class="dances-header"><br><br><br><br>Dances</h1>
 			<p class="dances-body">
 				Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
 		</div>
 		
@@ -120,11 +118,11 @@
 	<!-- Using id for linking to section -->
 	<section id="events">
 		
-		<div class="events-header">
+		<div class="events-header row">
 			<h2><br><br><br><br>Clemson Swing Events</h2>
 		</div>
 		
-		<div class="events-group">
+		<div class="events-group row">
 			
 			<div class="event-first">
 				<h4 class="event-first-header">First Event</h4>
@@ -137,7 +135,6 @@
 				<h4 class="event-second-header">First Event</h4>
 				<p class="event-second-body">
 					Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 				</p>
 			</div>
 			
@@ -148,21 +145,20 @@
 	<!-- Using id for linking to section -->
 	<section id="membership">
 		
-		<div class="membership-info">
+		<div class="membership-info row">
 			<h1 class="membership-header"><br><br><br><br>Membership</h1>
 			<p class="membership-body">
 				Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</p>
 		</div>
 		
 	</section>
 	
 	<!-- Using id for linking to section -->
-	<section id="officers" class="all-lead">
+	<section id="officers" class="all-lead-main">
 		<div class="all-lead">
 			<div class="officers-main">
-				<h3 class="officers-header"><br><br><br><br>Officers</h3>
+				<h3 class="officers-header">Officers</h3>
 				<div class="president">
 					<img src="pic/profile_base.png" alt="profile picture" class="profile-pic">
 					<h4 class="profile-type">President</h4>
@@ -212,6 +208,11 @@
 					<h4 class="profile-type">Intern</h4>
 					<h4 class="profile-name">Ben Killinger</h4>
 				</div>
+				<div class="intern-base">
+					<img src="pic/profile_base.png" alt="profile picture" class="profile-pic">
+					<h4 class="profile-type">Intern</h4>
+					<h4 class="profile-name">Amy Wert</h4>
+				</div>
 				<div class="intern-you">
 					<img src="pic/profile_base.png" alt="profile picture" class="profile-pic">
 					<h4 class="profile-type">Intern</h4>
@@ -220,8 +221,8 @@
 					</div>
 				</div>
 			</div>
-			<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
 		</div>
+		<p><br><br></p>
 	</section>
 	
 	<!-- Using id for linking to footer -->
@@ -250,8 +251,8 @@
 		<div class="footer-bottom">
 			<div class="row">
 				<div class="copyright">
-					<span>© Copyright cuswing 2018.</span>
-		        	<span>Design by <a href="http://www.instagram.com/joeltanner25565" target="_blank">Joel Tanner</a></span>		         	
+					<span class="foot-copy-left">© Copyright cuswing 2018.</span>
+		        	<span class="foot-copy-right">Design by <a href="http://www.instagram.com/joeltanner25565" target="_blank">Joel Tanner</a></span>
 				</div>
 			</div>
 		</div>

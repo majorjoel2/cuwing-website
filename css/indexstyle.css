@@ -29,6 +29,7 @@ html {
 }
 
 .officers-main {
+	
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -37,46 +38,55 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 25%;
 }
 
 .vice-president {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 25%;
 }
 
 .money {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 25%;
 }
 
 .pr-social {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 25%;
 }
 
 .events {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 25%;
 }
 
 .teach {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 25%;
 }
 
 .sec {
 	float: left;
 	padding-left: 10px;
-	padding-right: 20px;
+	padding-right: 10px;
+	width: 25%;
 }
 
 .advise {
+	float: left;
 	padding-right: 10px;
+	width: 25%;
 }
 
 .interns-main {
@@ -88,11 +98,14 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 33%;
 }
 
 .intern-you {
+	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	width: 33%
 }
 
 .header-logo {
@@ -160,7 +173,7 @@ li a:hover {
 }
 
 li a:focus {
-	color: #f77f00;
+	color: #D0D0D0;
 }
 
 li.current a {
@@ -173,6 +186,7 @@ li.current a {
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	min-height: 768px;
 }
 
 .home-content-f_left {
@@ -219,35 +233,203 @@ li.current a {
 }
 
 #about {
+	width: 100%;
 	background-color: #f66733;
+	min-height:  100vh;
 }
 
 #dances {
 	background-color: #f54f12;
+	min-height:  100vh;
 }
 
 #events {
 	background-color: #db420a;
+	min-height:  100vh;
 }
 
 #membership {
 	background-color: #bb3808;
+	min-height:  100vh;
 }
 
 #officers {
 	background-color: #522d80;
+	min-height:  100vh;
 }
 
 #login {
 	background-color: #1f1f1f;
+	min-height: 100px;
+	max-height: 200px;
 }
 
 
 
 .all-lead {
-	
+	max-width: 1080px;
+	text-align: center;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .officers-header {
-	
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.home-scrolldown {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: rotate(90deg);
+	transform-origin: top right;
+}
+
+.home-scrolldown a {
+	position: relative;
+	top: 20px;
+	right: 20px;
+}
+
+
+
+
+
+
+
+.home-scrolldown a:link,
+.home-scrolldown a:visited {
+	color: #B4B4B4;
+	text-decoration: none;
+	font-size: 17px;
+	transition: font-size 0.2s, color 0.2s;
+}
+
+
+
+.home-scrolldown a:active,
+.home-scrolldown a:hover {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.home-social-list {
+  position: absolute;
+  right: 45px;
+  top: 35%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 2.2rem;
+  line-height: 1.75;
+  text-align: center;
+  transform: translateY(-50%);
+  transform: rotate(90deg);
+  transform-origin: top right;
+}
+
+.facebook-icon {
+	height: 30px;
+	transform: rotate(-90deg);
+	transform-origin: top right;
+}
+
+.instagram-icon {
+	height: 30px;
+	transform: rotate(-90deg);
+	transform-origin: top right;
+}
+
+.tigerquest-icon {
+	height: 30px;
+	transform: rotate(-90deg);
+	transform-origin: top right;
+}
+
+.email-icon {
+	height: 30px;
+	transform: rotate(-90deg);
+	transform-origin: top right;
+}
+
+.interns-header {
+	text-align: center;
+	margin-top: 420px;
+	margin-bottom: 20px;
+}
+
+.footer-contact {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.footer-login {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.footer-bottom {
+	width: 100%;
+}
+
+.footer-top {
+	width: 100%;
+	float: left;
+}
+
+.copyright {
+	text-align: center;
+}
+
+
+
+.foot-copy-left {
+	color: #606060;
+	padding-right: 20px;
+}
+
+.foot-copy-right {
+	color: #a0a0a0;
+}
+
+.foot-copy-right a:link,
+.foot-copy-right a:visited,
+.foot-copy-right a:hover,
+.foot-copy-right a:active {
+	color: #606060;
+	text-decoration: none;
+}
+
+.footer-contact-header {
+	color: #808080;
+}
+
+.footer-contact-info {
+	color: #808080;
+}
+
+.footer-login-header {
+	color: #808080;
+}
+
+.footer-login-btn a:link,
+.footer-login-btn a:visited {
+	display: inline-block;
+	padding: 10px 40px;
+	text-decoration: none;
+	color: #808080;
+	border: 1px solid #808080;
+	border-radius: 200px;
+	transition: all 0.3s;
+}
+
+.footer-login-btn a:hover,
+.footer-login-btn a:active {
+	background-color: #808080;
+	color: #ffffff;
 }
