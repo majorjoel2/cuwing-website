@@ -20,6 +20,7 @@ li {
 html {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	text-rendering: optimizeLegibility;
+	color: #ffffff;
 }
 
 .profile-pic {
@@ -267,6 +268,7 @@ li.current a {
 
 
 .all-lead {
+	padding-top: 90px;
 	max-width: 1080px;
 	text-align: center;
 	display: table;
@@ -275,7 +277,6 @@ li.current a {
 }
 
 .officers-header {
-	margin-top: 50px;
 	margin-bottom: 20px;
 	text-align: center;
 }
@@ -294,26 +295,32 @@ li.current a {
 	right: 20px;
 }
 
-
-
-
-
-
-
 .home-scrolldown a:link,
-.home-scrolldown a:visited {
+.home-scrolldown a:visited,
+.home-scrolldown a:active,
+.home-scrolldown a:hover {
+	position: absolute;
+	width: 100px;
 	color: #B4B4B4;
 	text-decoration: none;
 	font-size: 17px;
-	transition: font-size 0.2s, color 0.2s;
+	animation: shake 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
-
-
-.home-scrolldown a:active,
-.home-scrolldown a:hover {
-	color: #ffffff;
-	font-size: 20px;
+@keyframes shake {
+	0% { transform: translate(0px, 0px); }
+	10% { transform: translate(-10px, 0px); }
+ 	20% { transform: translate(-20px, 0px); }
+	30% { transform: translate(-30px, 0px); }
+	40% { transform: translate(-40px, 0px); }
+	50% { transform: translate(-30px, 0px); }
+	60% { transform: translate(-20px, 0px); }
+	70% { transform: translate(-10px, 0px); }
+	80% { transform: translate(0px, 0px); }
+	90% { transform: translate(10px, 0px); }
+	100% { transform: translate(0px, 0px); }
 }
 
 .home-social-list {
@@ -344,7 +351,7 @@ li.current a {
 }
 
 .tigerquest-icon {
-	height: 30px;
+	height: 33px;
 	transform: rotate(-90deg);
 	transform-origin: top right;
 }
@@ -398,12 +405,24 @@ li.current a {
 }
 
 .foot-copy-right a:link,
-.foot-copy-right a:visited,
-.foot-copy-right a:hover,
-.foot-copy-right a:active {
+.foot-copy-right a:visited {
 	color: #606060;
 	text-decoration: none;
+	transition: all 0.3s;
+	animation: color-change 5s infinite;
 }
+
+@keyframes color-change {
+	0% { color: #f66733 }
+	50% { color: #ffffff }
+	100% { color: #f66733 }
+}
+
+.foot-copy-right a:hover,
+.foot-copy-right a:active {
+	color: #f66733;
+}
+
 
 .footer-contact-header {
 	color: #808080;
@@ -432,4 +451,26 @@ li.current a {
 .footer-login-btn a:active {
 	background-color: #808080;
 	color: #ffffff;
+}
+
+.about-header {
+	padding-top: 90px;
+	text-align: center;
+}
+
+.dances-header {
+	padding-top: 90px;
+	text-align: center;
+}
+
+.events-header {
+	padding-top: 90px;
+	text-align: center;
+}
+
+
+
+.membership-header {
+	padding-top: 90px;
+	text-align: center;
 }
