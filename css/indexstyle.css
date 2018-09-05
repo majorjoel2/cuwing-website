@@ -422,6 +422,7 @@ li.current a {
 
 .foot-copy-right {
 	color: #a0a0a0;
+	padding-left: 20px;
 }
 
 .foot-copy-right a:link,
@@ -519,4 +520,5 @@ li.current a {
 	font-size: 15px;
 	font-weight: 100px;
 	letter-spacing: 1px;
+	padding-bottom: 10px;
 }
