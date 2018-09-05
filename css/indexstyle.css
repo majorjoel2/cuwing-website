@@ -39,6 +39,7 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 25%;
 }
 
@@ -46,6 +47,7 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 25%;
 }
 
@@ -53,6 +55,7 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 25%;
 }
 
@@ -60,6 +63,7 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 25%;
 }
 
@@ -67,6 +71,7 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 25%;
 }
 
@@ -74,6 +79,7 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 25%;
 }
 
@@ -81,12 +87,14 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 25%;
 }
 
 .advise {
 	float: left;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 25%;
 }
 
@@ -99,6 +107,7 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 33%;
 }
 
@@ -106,6 +115,7 @@ html {
 	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	width: 33%
 }
 
@@ -184,10 +194,17 @@ li.current a {
 
 #home {
 	background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5)), url(pic/swing-bg.jpg);
+	animation: bg-img-rotation 15s infinite;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
 	min-height: 768px;
+}
+
+@keyframes bg-img-rotation {
+	0%, 32% { background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5)), url(pic/swing-bg.jpg); }
+	33%, 66% { background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5)), url(pic/swing-bg2.jpg); }
+	67%, 100% { background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5)), url(pic/swing-bg3.jpg); }
 }
 
 .home-content-f_left {
@@ -296,31 +313,34 @@ li.current a {
 }
 
 .home-scrolldown a:link,
-.home-scrolldown a:visited,
-.home-scrolldown a:active,
-.home-scrolldown a:hover {
+.home-scrolldown a:visited {
 	position: absolute;
-	width: 100px;
+	width: 150px;
 	color: #B4B4B4;
 	text-decoration: none;
 	font-size: 17px;
-	animation: shake 1.5s;
+	animation: shake 2.5s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	transition: all 0.3s;
+}
+
+.home-scrolldown a:active,
+.home-scrolldown a:hover {
+	color: #ffffff;
+	animation: color-switch 2s infinite, shake 2.5s infinite;
+}
+
+@keyframes color-switch {
+	0% { color: #FF0004 }
+	50% { color: #f66733 }
+	100% { color: #FF0004 }
 }
 
 @keyframes shake {
-	0% { transform: translate(0px, 0px); }
-	10% { transform: translate(-10px, 0px); }
- 	20% { transform: translate(-20px, 0px); }
-	30% { transform: translate(-30px, 0px); }
-	40% { transform: translate(-40px, 0px); }
-	50% { transform: translate(-30px, 0px); }
-	60% { transform: translate(-20px, 0px); }
-	70% { transform: translate(-10px, 0px); }
-	80% { transform: translate(0px, 0px); }
-	90% { transform: translate(10px, 0px); }
-	100% { transform: translate(0px, 0px); }
+	0%, 60%, 80%, 100% { transform: translateX(0); }
+	20% { transform: translateX(-5px); }
+	40% { transform: translateX(20px); }
 }
 
 .home-social-list {
@@ -473,4 +493,30 @@ li.current a {
 .membership-header {
 	padding-top: 90px;
 	text-align: center;
+}
+
+.join-us-btn a:link,
+.join-us-btn a:visited,
+.join-us-btn a:hover,
+.join-us-btn a:active {
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 1px #ffffff;
+	padding: 2px 10px;
+	border-radius: 200px;
+}
+
+.profile-type {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding-bottom: 5px;
+}
+
+.profile-name {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 100px;
+	letter-spacing: 1px;
 }
