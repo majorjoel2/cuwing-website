@@ -119,6 +119,19 @@ html {
 	width: 33%
 }
 
+@media only screen and (max-width: 1200px) {
+	.president {width: 50%}
+	.vice-president {width: 50%}
+	.money {width: 50%}
+	.pr-social {width: 50%}
+	.events {width: 50%}
+	.teach {width: 50%}
+	.sec {width: 50%}
+	.advise {width: 50%}
+	.intern-base {width: 50%}
+	.intern-you {width: 50%}
+}
+
 .header-logo {
 	float: left;
 }
@@ -133,9 +146,15 @@ html {
 	padding-right: 25px;
 	padding-left: 25px;
 	width: 94%;
-	max-width: 1080px;
+	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+	.row {
+		max-width: 980px;
+	}
 }
 
 #header {
@@ -152,10 +171,6 @@ html {
 	top: 0px;
 	right: 40px;
 	display: block !important;
-}
-
-.smoothscroll {
-	
 }
 
 .header-subwrapper {
@@ -296,6 +311,7 @@ li.current a {
 .officers-header {
 	margin-bottom: 20px;
 	text-align: center;
+	width: 100%;
 }
 
 .home-scrolldown {
@@ -386,6 +402,7 @@ li.current a {
 	text-align: center;
 	margin-top: 420px;
 	margin-bottom: 20px;
+	width: 100%;
 }
 
 .footer-contact {
