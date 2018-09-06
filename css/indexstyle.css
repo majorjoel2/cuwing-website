@@ -14,13 +14,18 @@ li {
 	top: 50%;
 	transform: translateY(-50%);
 	margin-right: 5px;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 html {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	text-rendering: optimizeLegibility;
 	color: #ffffff;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+	html { font-size: 30px;}
 }
 
 .profile-pic {
@@ -129,7 +134,8 @@ html {
 	.sec {width: 50%}
 	.advise {width: 50%}
 	.intern-base {width: 50%}
-	.intern-you {width: 50%}
+	.intern-you {width: 100%}
+	.profile-pic{height: 300px; width: 300px}
 }
 
 .header-logo {
@@ -153,7 +159,7 @@ html {
 
 @media only screen and (max-width: 1200px) {
 	.row {
-		max-width: 980px;
+		max-width: 780px;
 	}
 }
 
@@ -224,23 +230,24 @@ li.current a {
 
 .home-content-f_left {
 	position: absolute;
-	max-width: 1080px;
+	width: 50%;
+	max-width: 540px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-95%, -50%);
+	transform: translate(-100%, -50%);
 }
 
 .home-head {
 	color: #c0c0c0;
-	font-size: 240%;
+	font-size: 68px;
 	font-weight: 100;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	letter-spacing: 2px;
 }
 
 .home-subhead {
 	color: #c0c0c0;
-	font-size: 200%;
+	font-size: 50px;
 	font-weight: 150;
 	letter-spacing: 1px;
 	padding-bottom: 10px;
@@ -294,7 +301,7 @@ li.current a {
 #login {
 	background-color: #1f1f1f;
 	min-height: 100px;
-	max-height: 200px;
+	max-height: 400px;
 }
 
 
@@ -312,6 +319,7 @@ li.current a {
 	margin-bottom: 20px;
 	text-align: center;
 	width: 100%;
+	font-size: 200%;
 }
 
 .home-scrolldown {
@@ -403,6 +411,7 @@ li.current a {
 	margin-top: 420px;
 	margin-bottom: 20px;
 	width: 100%;
+	font-size: 200%;
 }
 
 .footer-contact {
@@ -494,16 +503,19 @@ li.current a {
 .about-header {
 	padding-top: 90px;
 	text-align: center;
+	font-size: 200%;
 }
 
 .dances-header {
 	padding-top: 90px;
 	text-align: center;
+	font-size: 200%;
 }
 
 .events-header {
 	padding-top: 90px;
 	text-align: center;
+	font-size: 200%;
 }
 
 
@@ -511,6 +523,7 @@ li.current a {
 .membership-header {
 	padding-top: 90px;
 	text-align: center;
+	font-size: 200%;
 }
 
 .join-us-btn a:link,
@@ -526,7 +539,7 @@ li.current a {
 
 .profile-type {
 	text-align: center;
-	font-size: 20px;
+	font-size: 125%;
 	font-weight: 600;
 	letter-spacing: 1px;
 	padding-bottom: 5px;
@@ -534,8 +547,28 @@ li.current a {
 
 .profile-name {
 	text-align: center;
-	font-size: 15px;
-	font-weight: 100px;
-	letter-spacing: 1px;
+	font-size: 100%;
+	font-weight: 100;
+	letter-spacing: 2px;
 	padding-bottom: 10px;
+}
+
+.about-body {
+	font-size: 100%;
+}
+
+.dances-body {
+	font-size: 100%;
+}
+
+.event-first-header {
+	font-size: 150%;
+}
+
+.event-first-body {
+	font-size: 100%;
+}
+
+.membership-body {
+	font-size: 100%;
 }
