@@ -1,0 +1,66 @@
+# robots.txt file for cuswing
+# Created in the distant future (the year 2000) after
+# the robotic uprising of the mid 90's which wiped out all humans.
+# Website by Joel Tanner
+
+#Google
+User-agent: Googlebot
+Crawl-delay: 1
+Disallow: /Old
+Disallow: /admin
+Disallow: /js
+
+#Bing
+User-agent: Bingbot
+Crawl-delay: 1000
+Disallow: /Old
+Disallow: /admin
+Disallow: /js
+Disallow: /pic
+Disallow: /css
+
+#Yahoo
+User-agent: Slurp
+Crawl-delay: 1000
+Disallow: /Old
+Disallow: /admin
+Disallow: /js
+Disallow: /pic
+Disallow: /css
+
+#DuckDuckGo
+User-agent: DuckDuckBot
+Crawl-delay: 1000
+Disallow: /Old
+Disallow: /admin
+Disallow: /js
+Disallow: /pic
+Disallow: /css
+
+#Chinese Search Engine
+User-agent: Baiduspider
+Disallow: /
+
+#Russia Search Engine
+User-agent: YandexBot
+Disallow: /
+
+#Facebook
+User-agent: facebot
+Crawl-delay: 100
+Disallow: /Old
+Disallow: /admin
+Disallow: /js
+
+#Alexa
+User-agent: ia_archiver
+Crawl-delay: 1000
+Disallow: /Old
+Disallow: /admin
+Disallow: /js
+Disallow: /pic
+Disallow: /css
+
+#Every other bot that repects robot
+User-agent: *
+Disallow: /
