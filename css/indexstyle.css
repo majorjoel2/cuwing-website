@@ -327,6 +327,7 @@ li.current a {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	margin-bottom: 10px;
 	transform: rotate(90deg);
 	transform-origin: top right;
 }
@@ -340,10 +341,10 @@ li.current a {
 .home-scrolldown a:link,
 .home-scrolldown a:visited {
 	position: absolute;
-	width: 150px;
+	width: 250px;
 	color: #B4B4B4;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 150%;
 	animation: shake 2.5s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
@@ -387,25 +388,48 @@ li.current a {
 	height: 30px;
 	transform: rotate(-90deg);
 	transform-origin: top right;
+	margin-right: 30px;
 }
 
 .instagram-icon {
 	height: 30px;
 	transform: rotate(-90deg);
 	transform-origin: top right;
+	margin-right: 30px;
 }
 
 .tigerquest-icon {
 	height: 33px;
 	transform: rotate(-90deg);
 	transform-origin: top right;
+	margin-right: 30px;
 }
 
 .email-icon {
 	height: 30px;
 	transform: rotate(-90deg);
 	transform-origin: top right;
+	margin-right: 30px;
 }
+
+@media only screen and (max-width: 1200px) {
+	.facebook-icon {
+		height: 60px;
+	}
+	.instagram-icon {
+		height: 60px;
+	}
+	.tigerquest-icon {
+		height: 60px;
+	}
+	.email-icon {
+		height: 60px;
+	}
+	.home-social-list {
+		top: 50%;
+	}
+}
+
 
 .interns-header {
 	text-align: center;
